@@ -285,7 +285,8 @@ background-image: url(../img/grafico1.jpg);
     appearance: none;
     text-align: center;
     font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif;    
+    font-family: Arial, Helvetica, sans-serif;
+    color: var (--blanco);
     
     
     /* border: 1rem solid var(--primarioOscuro); este código resume los tres anteriores */
