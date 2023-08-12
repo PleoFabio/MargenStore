@@ -1,0 +1,311 @@
+:root {
+    --primario: #241468;
+    --primarioOscuro: #9F0D7F;
+    --secundario: #FBFF00;
+    --secundarioOscuro: #FC7300;
+    --blanco: #fff;
+    --negro: #000;
+    
+    --fuentePrincipal: 'Staatliches', cursive;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-snap-type: y mandatory;
+  }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Globales */
+
+body {
+    background-color: var(--primario);
+    font-size: 16px;
+    line-height: 1.5;    
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    color: var(--blanco);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* El código anterior elimina el sudbayado en azul en todos los enlaces*/
+
+img {
+    width: 100%;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-family: var(--fuentePrincipal);
+    text-align: center;
+    color: var(--secundario);
+        
+}
+
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo {
+    margin: 1rem 0;
+    max-width: 20rem;
+    max-height: 20rem;
+}
+
+/* Footer */
+
+.footer {
+background-color: var(--primarioOscuro);
+padding: 1rem 0;
+margin-top: 2rem;
+}
+
+.footer__texto {
+font-family: var(--fuentePrincipal);
+text-align: center;
+font-size: 2.2rem;
+text-transform: uppercase;
+}
+
+/* Navegacion */
+
+
+.navegacion {
+    background-color: var(--primarioOscuro);
+    background-size: cover;
+    padding: .2rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    
+}
+
+.navegacion__enlace {
+    font-family: var(--fuentePrincipal);
+    color: var(--blanco);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.navegacion__enlace--activo,
+.navegacion__enlace:hover {
+    color: var(--secundario);
+}
+
+/* Main */
+
+.contenedor {
+    font-family: var(--fuentePrincipal);
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-size: 2.2rem;
+    
+}
+
+/* Grid */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+}
+
+/* Productos */
+
+.producto {
+background-color: var(--primarioOscuro);
+padding: 1rem;
+
+}
+
+.producto__imagen {
+width: 100%;
+}
+
+.producto__nombre {
+font-size: 2.5rem;
+}
+
+.producto__precio {
+    font-size: 2rem;
+    color: var(--secundario);
+}
+
+.producto__nombre,
+.producto__precio {
+    font-family: var(--fuentePrincipal);
+    margin: 10px;
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* Graficos */
+
+.grafico {
+    min-height: 30rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1 / 3;
+}
+
+.grafico__camisas {
+grid-row: 2 / 3;
+background-image: url(../img/grafico1.jpg);
+}
+
+.grafico__node {
+    background-image: url(../img/grafico2.jpg);
+    grid-row: 8 / 9;
+}
+
+@media (min-width: 768px) {
+    .grafico__node {
+        grid-column: 2 / 4;
+        grid-row: 5 / 6;
+        }
+}
+
+/* Pagina Nosotros.HTML */
+
+.nosotros {
+    display: grid;
+    
+}
+
+@media (min-width: 768px) {
+    .nosotros {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem, auto;
+        
+        }
+}
+
+.nosotros__contenido {
+    text-transform: none;
+    font-family: Arial;
+}
+
+.nosotros__imagen {
+    grid-row: 1 / 2;
+    width: 100%;
+
+}
+
+@media (min-width: 768px) {
+    .nosotros__imagen {
+        grid-column: 2 / 3;
+    }
+}
+
+/* bloques */
+
+.bloques {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .bloques {
+        grid-template-columns: repeat(4, 1fr)
+    }
+}
+
+.bloque {
+    text-align: center;
+    text-transform: none;
+}
+
+.bloque.__titulo {
+    margin: 0;
+}
+
+.bloque__imagen {
+    width: 100%;
+}
+
+/* Pagina del Producto */
+
+@media (min-width: 768px) {
+    .camisa {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+.camisa__contenido {
+    text-transform: none;
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.formulario__campo {
+    border-width: 1rem;
+    border: solid;
+    border-color: var(--primarioOscuro);
+    background-color: transparent;
+    appearance: none;
+    text-align: center;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;    
+    
+    
+    /* border: 1rem solid var(--primarioOscuro); este código resume los tres anteriores */
+}
+
+.formulario__submit {
+    background-color: var(--secundario);
+    border: none;
+    font-size: 2rem;
+    font-family: var(--fuentePrincipal);
+    padding: 2rem;
+    transition: background-color .3s ease;
+    grid-column: 1 / 3;
+}
+
+.formulario__submit:hover {
+    cursor: pointer;
+    background-color: var(--secundarioOscuro)
+}
+    
+
+
+

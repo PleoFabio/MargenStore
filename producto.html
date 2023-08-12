@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margen Store</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@700&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    
+    <header class="header">
+            <a href="index.html">
+            <img class="header__logo" src="/img/logo_Margen_Store.png" alt="Logotipo">
+        </a>
+    </header>
+
+    <nav class="navegacion">
+
+        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Tienda</a>
+        <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+
+    </nav>
+
+    <main class="contenedor">
+
+        <h2>React JS</h2>
+
+        <div class="camisa">
+            <img class="camisa__imagen" src="img/3.jpg" alt="imagen del producto">
+
+            <div class="camisa__contenido">
+                <p>Fusce sit amet turpis ligula. Ut auctor sit amet quam et porta. Sed nec finibus libero. Maecenas viverra urna consectetur, aliquam ante et, semper ipsum.</p>
+
+                <form class="formulario">
+                  <select class="formulario__campo">
+                    <option disabled selected>--Selecciona tu talla--</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>                    
+                  </select>
+
+                  <input class="formulario__campo" type="number" placeholder="Cantidad" min="1">
+                  <input class="formulario__submit" type="submit" value="Agregar al carrito">
+
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+
+        <p class="footer__texto"> Margen Store - Todos los derechos reservados 2023</p>
+
+    </footer>
+
+    <!-- alt corresponde atributo que funciona como texto alternativo en caso que la imagen no carge -->
+</body>
+</html>
