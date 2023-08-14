@@ -295,7 +295,7 @@ background-image: url(../img/grafico1.jpg);
 .formulario__submit {
     background-color: var(--secundario);
     border: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: var(--fuentePrincipal);
     padding: 1.5rem;
     transition: background-color .3s ease;
